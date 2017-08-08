@@ -27,7 +27,7 @@ void decode_stream(AVFormatContext *ctx, int stream_index) {
 int main(const int args, const char *argv[]) {
 	av_register_all();
 	AVFormatContext *ctx = avformat_alloc_context();
-	const char *fileurl = "file:/Users/quanzhou/Desktop/WeChatSight240.mp4";
+	const char *fileurl = "file:/Users/zhou/Desktop/mda-heyt57ez3gk93zbt.mp4";
 	int res = avformat_open_input(&ctx, fileurl, NULL, 0);
 	if(0 == res) {
 		res = avformat_find_stream_info(ctx,NULL);
